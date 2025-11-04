@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random user card</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="w-[600px] my-35 border-2 border-slate-300 p-4 mx-auto rounded-lg flex items-center justify-center flex-col"
+    >
+      <img
+        id="img"
+        src=""
+        alt=""
+        class="rounded-full ml-[-5px] w-20 h-20 object-cover border-2 border-slate-300 ring-5 my-6 ring-slate-200"
+      />
+
+      <div class="grid grid-cols-2 w-full gap-2 my-15 text-lg">
+        <div class="text-slate-500">
+          <div class="flex justify-between mb-4">
+            <p>Name</p>
+            <p>:</p>
+          </div>
+          <div class="flex justify-between mb-4">
+            <p>Gender</p>
+            <p>:</p>
+          </div>
+          <div class="flex justify-between mb-4">
+            <p>Email</p>
+            <p>:</p>
+          </div>
+          <div class="flex justify-between mb-4">
+            <p>Phone</p>
+            <p>:</p>
+          </div>
+          <div class="flex justify-between mb-4">
+            <p>DOB</p>
+            <p>:</p>
+          </div>
+        </div>
+        <div class="">
+          <div class="mb-4">
+            <p id="name">xyz</p>
+          </div>
+          <div class="mb-4">
+            <p id="gender">xyz</p>
+          </div>
+          <div class="mb-4">
+            <p id="email">xyz</p>
+          </div>
+          <div class="mb-4">
+            <p id="phone">xyz</p>
+          </div>
+          <div class="mb-4">
+            <p id="dob">xyz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-70 flex items-center justify-center m-auto">
+      <button
+        onclick="fetchUser()"
+        class="bg-slate-500 px-5 py-2 text-white rounded-lg hover:cursor-pointer"
+      >
+        Generate random user
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
